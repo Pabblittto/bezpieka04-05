@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            width: 300px;
+        }
+    </style>
+</head>
+<body style="width: 1000px; margin: auto;">
+    <div style="border-bottom: 1px black solid;">
+        <h3>ZAD1 LFSR</h3>
+        <div>
+            <input type="number" placeholder="stopien wielomianu" id="zad1stopien"/>
+        </div>
+        <div>
+            <input type="text" placeholder="poczatkowe stany wewnetrzne układu-binarnie! " id="zad1seed"/>
+        </div>
+        <div>
+            <input type="text" placeholder="maska wielomianu (kolejne wartosci Alfa- binarnie!)  " id="zad1maska"/>
+        </div>
+        maska jest dopełniana jedynkami, a wartośc początkowa zerami
+        <button onclick="zad1next()">Oblicz następną</button>
+        <button onclick="zad1Uklad()">Inicjuj układ </button>
+        <h5 id="zd1wynik"></h5>        
+    </div>
+    <div style="border-bottom: 1px black solid;">
+        <h3>ZAD3 Ciphertext Autokey</h3>
+        <div>
+            <input type="number" placeholder="stopien wielomianu" id="zad3stopien"/>
+        </div>
+        <div>
+            <input type="text" placeholder=" seed -poczatkowe stany wewnetrzne układu-binarnie!" id="zad3seed"/>
+        </div>
+        <div>
+            <input type="text" placeholder="maska wielomianu (kolejne wartosci Alfa- binarnie!)" id="zad3maska"/>
+        </div>
+        <div>
+            <input type="text" placeholder="wiadomosc-binarnie!" id="zad3wiadomosc"/>
+        </div>
+        <button onclick="zad3Kodowanie()">Koduj/Dekoduj</button>
+
+        <h5 id="zd3wynik"></h5>        
+    </div>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
